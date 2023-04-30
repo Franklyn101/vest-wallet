@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+ <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        body{
+            font-family: 'lato', sans-serif;
+            padding-bottom: 366px;
+            height: fit-content;
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        .logo img {
+            margin-left: 50px;
+            top: 30px;
+            position: absolute;
+        }
+
+        .face img {
+             height: 405px;
+             width: 405px;
+             object-fit: contain
+            
+        }
+
+        .face {
+            margin-top: 115px;
+            margin-left: 110px;
+        }
+        
+        .login {
+            width: 500px;
+            height: 813px;
+            border: none;
+            position: absolute;
+            margin-top: 24px;
+            margin-left: 707px ;
+            padding: 0px 48px 0px 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 3px;
+            box-shadow: 0px 0px 10px rgb(201, 200, 200);
+
+         }
+
+         .login p {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            margin-top: 5px;
+            width: 330px;
+            
+         }
+
+         .inputfloat_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 20px;
+         }
+
+         
+
+         .info  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            
+         }
+
+         .info p {
+            font-size: 1em;
+            
+         }
+         
+         .info img {
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+            margin-right: 10px;
+         }
+
+         .PnR {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+
+         }
+         .btn {
+            padding: 20px 0px 20px 0px;
+            text-align: center;
+            width: 400px;
+            margin-left: 40px;
+            border-radius: 6px;
+            color: white;
+            background: rgb(138, 135, 135);
+            border: none;
+            margin-right: 20px;
+            position: absolute;
+            margin-top: 90px;
+         }
+
+         .TnA {
+            display: flex;
+
+         }
+
+         .agreement {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 00px;
+        
+         }
+
+         .agreement a {
+            font-size: 1.2em;
+            margin-top: 5px;
+            font-size: 19px;
+            text-decoration: none;
+            color: #67a948;
+        
+         }
+         .agreement p {
+            width: 350px;
+            font-size: 19px;
+            margin-left: 30px;
+            margin-top: 20px;
+         }
+         .inp {
+            width: 402px;
+            height: 60px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            padding-left: 20px;
+            font-size: 16px;
+            background-color: rgb(246, 246, 246);
+           
+         }
+
+         .inp2 {
+            width: 402px;
+            height: 60px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            padding-left: 20px;
+            font-size: 16px;
+            background-color: rgb(246, 246, 246);
+         }
+         .checkbox {
+            margin-left: 40px;
+            
+            width: 30px;
+            height: 20px;
+            border: 1px solid green;
+            position: absolute;
+            margin-left: -2px;
+            margin-top: 24px;
+
+         }
+         .login-cont {
+            margin-top: -80px;
+         }
+  </style>
+</head>
+<body>
+ <section>
+     <div class="container">
+            <!-- left -->
+             
+            <div class="logo">
+                 <img src="h-logo.c2ab29a5.svg" alt="">
+            </div>
+        
+            <div class="face">
+                <img src="intro-img.ed4e0e92.png" alt="">
+            </div>
+
+
+          <div class="login">
+            <div class="login-cont">
+                <h1>Create Your Vesti Account</h1>
+                
+                <p>Join more than 70,000 users preparing for a new life aboard 
+                with Vesti Wallets, Virtual Cards, and key immigration services.</p>
+                <!-- right side container -->
+                <form>
+                    <div class="inputfloat">
+                        <div class="inputfloat_box">
+                          <!-- <label>Email  Adress</label> -->
+                          <input type="email" name="email Adress" placeholder="Email Adress" class="inp">
+                          <!-- <label>Enter Password</label> -->
+                          <input type="password" placeholder  ="Enter Password" class="inp">
+                        </div>
+                    </div>
+                
+                    <div class="info">
+                       <img src="info.84912e3e (1).svg" alt="~">
+                       <p>Password must contain at least 8 characters</p>
+                    </div>
+                    <div class="PnR">
+                       <!-- <label>Confirm Password</label> -->
+                       <input type="password" placeholder="Confirm Password" class="inp2">
+                       <!-- <label>Referral Code</label> -->
+                       <input type="text" placeholder="Referral Code" class="inp2">
+                    </div>
+                    <label class="TnA">
+                        <input type="checkbox" class="checkbox">
+                        <span class="agreement">
+                           <p>I agree to Vesti 
+                           <a href="£">Terms of Service</a> &
+                           <a href="£">Privacy Policy</a>
+                           
+                    
+                        </span>
+                        
+                    
+                    </label>
+                </form>
+                
+                <button class="btn"><label>REGISTER</label></button>
+            </div>  
+       </div>
+     </div>
+    </section>
+</body>
+</html>

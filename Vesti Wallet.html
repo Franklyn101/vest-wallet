@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Great C">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesti</title>
+    <link rel="shortcut icon" href="Images/Favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="vesti/vesti.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&amp;family=Roboto:wght@300;400&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="vesti/vesti.css"> 
+
+
+    <style>
+        * {
+
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+        }
+
+        .Header {
+            display: flex;
+           
+
+        }
+
+        .Headerimg {
+            margin-left: 86px;
+            margin-top: 40px;
+        }
+
+        .Headerlist {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin-left: 330px;
+            margin-top: 58px;
+            font-size: 16px;
+        }
+
+        .Homebar {
+            position: absolute;
+            margin-left: -120px;
+            color: #67A948;
+            border-bottom: 5px solid #67A948;
+            padding-bottom: 34px;
+        }
+
+        .Reversecaret {
+            rotate: -90deg;
+            margin-left: 70px;
+            margin-top: -20px;
+        }
+
+        .HeaderL button {
+            width: 180px;
+            height: 60px;
+            border-radius: 10px;
+            background-color: #67A948;
+            color: white;
+            border: none;
+            font-size: 16px;
+            margin-left: 80px;
+            margin-top: 36px;
+        }
+        .HeaderL button:hover {
+            background-color: #4a7a33;
+            transition: 0.3s;
+        }
+        .Dropdown {
+            transform: translateY(-450px);
+            position: relative;
+    
+}
+        .NavdropdownL {
+          background-color: white;
+            width: 600px;
+            height: 286px;
+            position: absolute;
+            border: none;
+            margin-left: -275px;
+            border-radius: 10px 0px 0px 10px;
+            margin-top: 60px;
+            box-shadow:  0px 0px 80px rgba(182, 180, 180, 0.116) , 0px 0px 50px rgba(148, 146, 146, 0.116);
+        
+}           
+        .NavdropdownR {
+            width: 330px;
+            height: 276px;
+            position: absolute;
+            border: none;
+            margin-left: 325px;
+            margin-top: 60px;
+            border-radius: 0px 10px 10px 0px;
+            background-color: #67A948;
+            box-shadow:  0px 0px 80px rgba(182, 180, 180, 0.116) , 0px 0px 50px rgba(148, 146, 146, 0.116);
+} 
+        .Dropdownrow1 {
+            display: flex;
+            margin-top: 21px;
+            margin-left: 41px;
+        
+}
+        .Dropdownrow2 {
+            display: flex;
+            margin-left: 41px;
+            margin-top: 40px;
+        
+}
+        .Dropdownrow3 {
+            display: flex;
+            margin-left: 41px;
+            margin-top: 21px;
+            color: white; 
+            
+}
+        .Dropdownrow4 {
+            display: flex;
+            margin-left: 41px;
+            margin-top: 60px;
+            color: white; 
+}
+    
+        .Dropdownitem {
+            display: flex;
+            width: 270px;
+            margin-top: -14px;
+}
+        .Dropdowntext {
+            display: flex;
+            flex-direction: column;
+            margin-left: 11px;
+            margin-top: 10px;      
+}
+        .Dropdowntext h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #4a7a33;
+            
+}
+        .Dropdowntext p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: rgb(94, 94, 94);
+            font-weight: 500;
+            width: 200px;
+}
+        .Dropdowntext2 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 11px;
+            margin-top: 10px;
+}
+        .Dropdowntext2 h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            color: white;
+}
+        .Dropdowntext2 p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: white;
+            font-weight: 500;
+            width: 200px;
+}
+        .imgresize {
+            margin-top: 30px;
+}
+        .Dropdownheader {
+            display: flex;
+            align-items: center;
+            
+}
+        .Dropdownicon {
+            margin-top: 21px;
+            margin-left: 8px;
+}
+        .Dropdowntoggle {
+            height: 100px;
+            width: 50px;
+            position: absolute;
+            /* background-color: black;  */
+            display: flex;
+            justify-content: center;
+            margin-left: 20px;
+            z-index: 1;
+}
+        .Dropdowntoggle:hover .Dropdown {
+            transform: translateY(0px);
+            transition: 0.6s;
+            
+            
+}
+        .Navleft {
+            margin-left: 120px;
+            display: flex;
+            
+            gap: 30px;
+}
+        /* .Navleftitem1:hover, .Navitemsrule1 {
+            color: #67A948; 
+            transform: scaleX(40);
+            
+        
+           
+}             */
+              
+
+/*      
+         .Navleftitem:hover{
+            color: #67A948;
+            border-bottom: 5px solid #67A948;
+            border-width: 100%; 
+            
+            
+            
+          
+            transition: 1s;
+} */
+        .Navitemsrule1 {
+            width: 40px;
+            height: 60px;
+            border-bottom: 5px solid black;
+            margin-top: 0px;
+            margin-left: 0px;
+            position: absolute;
+            transform: scaleX(0.001);
+}
+        .Navitemsrule1:hover {
+            transform: scaleX(1); 
+            transition: 1s;
+            border-color: #67A948;
+            color: #67A948;
+}
+        .Navitemsrule2 {
+            width: 40px;
+            height: 60px;
+            border-bottom: 5px solid black;
+            margin-top: 0px;
+            margin-left: 100px;
+            position: absolute;
+            transform: scaleX(0.0001);
+}
+        .Navitemsrule2:hover {
+            transform: scaleX(2.6);
+            transition: 1s;
+            border-color: #67A948;
+            color: #67A948;
+}   
+
+        .Navitemsrule3 {
+            width: 40px;
+            height: 60px;
+            border-bottom: 5px solid black;
+            margin-top: 0px;
+            margin-left: 207px;
+            position: absolute;
+            transform: scaleX(0.0005);
+}
+        .Navitemsrule3:hover {
+            transform: scalex(1.20);
+            transition: 1s;
+            border-color: #67A948;
+            color: #67A948;
+}   
+        .Toggle:hover {
+            color: #67A948;
+            transition: 0.7s;
+}
+        .Heropagecontent {
+            display: flex;
+            font-family: 'lato', sans-serif;
+
+}
+        .Heropagetext {
+            display: flex;
+            flex-direction: column;
+            width: 626px;
+            height: 373px;
+            background-color: white;
+            margin-left: 70px;
+            margin-top: 83px;
+}
+        .Heroheading {
+            font-size: 4.25em;
+            color: #2b5219;
+            line-height: 1.3em;
+            font-weight:bolder;
+            font-style: normal;
+            width: 438px;
+            height: 265px;
+            font-weight: 900;
+}
+        .Herotext {
+            font-size: 24px;
+            font-weight: 300;
+            width: 501px;
+            height: 108px;
+            line-height: 1.5em;
+            color: #2b5219;
+}       
+        .Heroimg {
+            margin-top: 83px;
+            margin-left: -1px;
+}
+        .Mediabar {
+            display: flex;
+            margin-bottom: 130px;
+}
+        .Mediaitem1 {
+            background-color: #3e6f26;
+            width: 227px;
+            display: flex;
+            height: 70px;
+            border-radius: 10px;
+            margin-left: 70px;
+            margin-top: 40px;
+}
+        .Mediaitem1:hover {
+            background-color: #599e37;
+            transition: 0.4s;
+}
+        .Mediaitem2 {
+            background-color: #3e6f26;
+            width: 227px;
+            display: flex;
+            height: 70px;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-top: 40px;
+}
+        .Mediaitem2:hover {
+            background-color: #599e37;
+            transition: 0.4s;
+}
+        .Mediaimg {
+            margin-top: 15px;
+            margin-left: 20px;
+            width: 40px;
+            height: 40px;
+}
+        .Mediatext {
+            display: flex;
+            flex-direction: column;
+            margin-left: 18px;
+            margin-top: 12px;
+            line-height: 1.2em;
+} 
+        .Mediatext h3 {
+            font-size: 15px;
+            color: #F7FFF3;
+            font-weight: 700;
+            letter-spacing: .06em;
+}
+
+        .Mediatext p {
+            font-size: 22px;
+            letter-spacing: .05em;
+            color: #F7FFF3;
+            font-weight: 700;
+            
+}
+        .Helpbar {
+            width: 107px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            border-radius: 25px;
+            background-color: #84B71F;
+            border: 1px solid #3e6f26;
+            margin-left: 1237px;
+            margin-top: 40px;
+            position: fixed;
+            z-index: 3;
+            color: black;
+}
+         
+        .Helpbar b {
+          color: #000;
+          margin-left: 10px;
+          margin-top: -1px;
+        }
+
+        .Helpbar svg {
+            margin-left: 22px;
+            margin-top: 4px;
+            
+}
+        .Helpbar p {
+            margin-left: 10px;
+            margin-top: 13px;
+            font-size: 15px;
+            font-family: 600;
+            color: #2F3D14;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+        .Intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+        .Introtext {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 736px;
+            height: 178px;
+            color: #14290A;
+            font-weight: 300;
+            text-align: center;
+}
+        .Introtext h3 {
+            font-size: 36px;
+            margin-bottom: -5px;
+            
+}
+        .Introtext p {
+            font-size: 19.2px;
+            word-break: break-word;
+            line-height: 1.5em;
+}
+        .Intro-img-gallery {
+            display: flex;
+            flex-direction: column;
+}
+        .Intro-img-row {
+            display: flex;
+            margin-left: 107px;
+            margin-top: 10px;
+            gap: 50px;
+}
+        .Intro-img-item {
+            width: 576px;
+            height: 500px;
+            border: 1px solid #14290A;
+            border-radius: 20px;
+            padding-left: 40px;
+            padding-top: 43px;
+}
+        .Intro-img-item h3 {
+            font-size: 2em;
+            line-height: 1.2em;
+            color: #67a948;
+            font-style: normal;
+            font-weight: 700;
+          
+} 
+        .Intro-img-item p {
+            width: 443px;
+            height: 143px;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            color: #2b5219;
+            font-style: normal;
+            font-weight: 300;
+          
+}
+        .Intro-img-item a {
+            position: absolute;
+            margin-top: 62px;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 1em;
+            color: #2b5219;
+            font-style: normal;
+            font-weight: 700;
+            z-index: -1;
+}
+        .Intro-img-item .a2 {
+            position: absolute;
+            margin-top: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 1em;
+            color: #2b5219;
+            font-style: normal;
+            font-weight: 700;
+            z-index: -1;
+}
+        .Intro-img-item .a3 {
+            position: absolute;
+            margin-top: -24px;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 1em;
+            color: #2b5219;
+            font-style: normal;
+            font-weight: 700;
+            z-index: -1;
+}
+        .Imgoverlay {
+            margin-top: -264px;
+            margin-left: -41px;
+            position: absolute;
+            z-index: 1;
+            
+}
+        .Imgoverlay:hover {
+            opacity: 0;
+            transition: 0.5s;
+            transition-timing-function: ease-out;
+}
+        .Heading2 {
+            margin-top: 38px;
+            margin-bottom: 38px;
+            margin-left: 512px;
+            font-size: 24px
+}
+
+
+
+/* franlyns */
+::-webkit-scrollbar {
+            overflow: hidden;
+        }
+        .International {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(248, 254, 245);
+           
+        }
+        .info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 300px;
+            /* padding-top: 30px; */
+            margin-top: 100px;
+              
+            
+        }
+        .pp {
+            color: rgb(43, 82, 25);
+             line-height: 24px;
+             font-style: normal;
+             font-weight: lighter;
+             font-size: 25px;
+             font-family: 'lato', sans-serif;
+             margin-top: 8px;
+            
+        }
+
+
+        .grid {
+            display: grid;
+            grid-template-columns: 450px 450px;
+            justify-content: center; 
+            align-items: center;
+            gap: 50px;
+            height: 200px;
+            margin-top: 60px;
+           
+        }
+        .int {
+            height: 100px;
+            margin-top: -40px;
+        }
+        .int h1 {
+            color: #2b5219;
+            font-style: normal;
+            line-height: 40px;
+            font-family: 'lato', sans-serif;
+            font-size: 35px;
+        }
+        .int p {
+            color: rgb(43, 82, 25);
+             line-height: 24px;
+             font-style: normal;
+             font-weight: light;
+             font-size: 19px;
+             font-family: 'lato', sans-serif;
+             margin-top: -2px;
+        }
+        .title {
+            margin-top: -40px;
+            font-weight: 400;
+            font-size: 25px;
+            color: black;
+            line-height: 30px;
+        }
+        .hassle {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+        }
+        .seam {
+    
+            display: flex;
+            width: 100%;
+            gap: 20px;
+        }
+        .fast {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+        }
+        .secure {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+        }
+        
+.section2 {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: row;
+} 
+   
+
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: calc(100% - 10px);
+    margin-bottom: 20px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 10px rgba(181, 178, 178, 0.3);
+    border-radius: 8px;
+    border-radius: 1px solid rgb(200, 197, 197);
+  }
+  
+  .card-content {
+    padding: 20px;
+    height: 250px;
+    overflow-y: hidden;
+    position: relative;
+  }
+  
+  .card-content::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .card-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+  
+  .card:hover .card-content {
+    overflow-y: hidden;
+  }
+  .cont {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(250, 250, 250);; */
+    margin-left: 90px;
+  }
+  .human {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .card-info {
+    line-height: 25px;
+
+  }
+  .timer {
+    color: #949090;
+  }
+
+  .users {
+    margin-left: 1500px;
+    height: 100px;
+    width: 600px;
+    margin-top: -300px;
+  }
+  .users h1 {
+    font-size: 40px;
+    font-family: 'lato', sans-serif;
+    margin-top: -50px;
+  }
+  h2 {
+    color: #c6c6c2;
+    font-style: normal;
+    line-height: 37px;
+    font-weight: light;
+    font-size: 19px;
+    font-family: 'lato', sans-serif;
+    color: rgb(43, 82, 25);
+
+  }
+  .users button {
+    background-color: rgb(103, 169, 72);
+    padding: 15px 60px 15px 60px;
+    border: none;
+    border-radius: 13px;
+    color: #ffff;
+    font-weight: 23px;
+    font-weight: lighter;
+
+  }
+
+  .users button:hover {
+    background-color: rgb(62, 111, 38);
+
+  }
+        
+.section2 {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: row;
+} 
+   
+
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: calc(100% - 10px);
+    margin-bottom: 20px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 10px rgba(181, 178, 178, 0.3);
+    border-radius: 8px;
+    border-radius: 1px solid rgb(200, 197, 197);
+  }
+  
+  .card-content {
+    padding: 20px;
+    height: 250px;
+    overflow-y: hidden;
+    position: relative;
+  }
+  
+  .card-content::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .card-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+  
+  .card:hover .card-content {
+    overflow-y: hidden;
+  }
+  .cont {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(250, 250, 250);; */
+    margin-left: 90px;
+  }
+  .human {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .card-info {
+    line-height: 25px;
+
+  }
+  .timer {
+    color: #949090;
+  }
+
+  .users {
+    margin-left: 1500px;
+    height: 100px;
+    width: 600px;
+    margin-top: -300px;
+  }
+  .users h1 {
+    font-size: 40px;
+    font-family: 'lato', sans-serif;
+    margin-top: -50px;
+  }
+  h2 {
+    color: #c6c6c2;
+    font-style: normal;
+    line-height: 38px;
+    font-weight: lighter;
+    font-size: 24px;
+    font-family: 'lato', sans-serif;
+    color: rgb(43, 82, 25);
+
+  }
+  .users button {
+    background-color: rgb(103, 169, 72);
+    padding: 15px 60px 15px 60px;
+    border: none;
+    border-radius: 13px;
+    color: #ffff;
+    font-weight: 23px;
+    font-weight: lighter;
+
+  }
+
+  .users button:hover {
+    background-color: rgb(62, 111, 38);
+    /* geegold */
+
+  }
+  .dady {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(248, 254, 245);
+    border-radius: 40px;
+    width: 1100px;
+    margin-left: 150px;
+    margin-top: 60px;
+    padding-top: 70px;
+    padding-bottom: 90px;
+  
+  }
+  .dady h2 {
+    font-size: 27px;
+    font-family: lato, sans-serif;
+    font-weight: 700;
+  }
+  .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .one h5 {
+    text-align: center;
+    font-size: 21px;
+    font-family: lato, sans-serif;
+    font-weight: lighter;
+  }
+  .six {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    margin-top: 80px;
+
+  }
+  .five h5{
+    font-size: 21px;
+    font-family: lato, sans-serif;
+    font-weight: lighter;
+    line-height: 30px;
+    
+
+  }
+  .eight {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 80px;
+  }
+  .nine h5 {
+    font-size: 21px;
+    font-family: lato, sans-serif;
+    font-weight: lighter;
+    line-height: 30px;
+  }
+  .ten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+  }
+  .ten h2 {
+    text-align: center;
+    color: rgb(43, 82, 25);
+    font-size: 34px;
+
+  }
+  .twelve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
+  }
+  .twelve img {
+    width: 250px;
+    height: 100px;
+  }
+
+  /* hope */
+
+  .download-vesti {
+    margin-top: 200px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+   
+  }
+  .inner {
+    width: 1070px;
+    height: 330px;
+    background-color: #67a948;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: 100px;
+    margin-left: 70px;
+
+  }
+  .in {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .img-right img {
+    margin-top: -60px;
+    height: 480px;
+    right: 155px;
+    margin-left: 590px;
+}
+.img-right {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -90px;
+
+ 
+}
+.links {
+  display: flex;
+  gap: 50px;
+}
+.links p {
+  font-size: 20px;
+  font-family: lato, sans-serif;
+  font-weight: 600;
+}
+.links span {
+  font-size: 24px;
+  font-family: lato, sans-serif;
+  font-weight: 600;
+}
+
+.stores {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+    height: 70px;
+    padding-left: 23px;
+    padding-right: 23px;
+    background-color: #3e6f26;
+    border-radius: 10px;
+    cursor: pointer;
+    gap: 20px;
+    color: #fff;
+    font-family: lato, sans-serif;
+    margin-left: 20px;
+    transition: all .3s ease;
+}
+.stores:hover {
+  background: #67a948;
+  
+  
+}
+.in h1 {
+  font-size: 40px;
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  color: #2F3D14;
+  line-height: 50px;
+  margin-right: 80px;
+
+}
+.in span {
+  color: #fff;
+}
+
+/* hope */
+.assured {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.so{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    height: fit-content;
+    
+}
+.so p{
+    font-size: larger;
+    padding: 0;
+    margin: 0;
+    font-size: 19.2px;
+    font-weight: 300;
+}
+.so:first-child{
+    font-size: 24px;
+    font-weight: 900;
+}
+.green button span{
+    font-size: larger;
+
+}
+
+.big{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    gap: 25%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.big div{
+    width: 300px;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.big div img{
+    padding-bottom: 10px;
+
+}
+
+.big div p {
+    width: 400px;
+    text-align: center;
+    color: gray;
+    font-size: larger;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+.sect{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ella */
+
+.body{
+        font-style: normal;
+      font-family: 'lato',sans-serif;
+      
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .Newsletter-container{
+        height: fit-content;
+    width: 100%;
+    height:341px;
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+    .Newsletter-inner{
+    width: 80%;
+    height: 100%;
+    background: url("circlesup.8a4a1bd7.svg ") no-repeat #3e6f26;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+    .newsletter-top{
+        text-align: center;
+    margin: auto;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: #f9f8f9;
+    font-style: normal;
+    font-family: lato,sans-serif;
+    font-weight: 700;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    line-height: 1.5;
+}
+   
+.newsletter-input{
+   width: 100%;
+ }
+
+.a{
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    font-size: 37px;
+    line-height: 1.5em;
+    color: #f9f8f9;
+    font-style: normal;
+    font-family: lato,sans-serif;
+    font-weight: 700;
+    
+}
+.newsletter-button{
+    width: 450px;
+    border: none;
+    height: 60px;
+    color: #f9f8f9;
+    border-radius: 15px;
+    background-color: #67a948;
+    cursor: pointer;
+    font-size: 19px;
+    margin-top: 20px;
+}
+.b{
+    font-size: 30px;
+    text-align: center;
+    margin: 7;
+    font-size: 24px;
+    line-height: 1.5em;
+    color: #f9f8f9;
+    font-style: normal;
+    font-family: lato,sans-serif;
+    font-weight: 300;
+    width: 59%;
+    margin-top: -2px;
+}
+.image1{
+    width: 215px;
+    height: 160px;
+    position: relative;
+    top: -4.5rem;
+    left: 12.8rem;
+    margin-left: -213px;
+}
+.image2{
+  width: 180px;
+    height: 157px;
+    position: absolute;
+    top: 12.7rem;
+    right: 8.5%;
+    margin-right: 19px;
+    rotate: 355deg;
+    margin-top: -33px;
+    vertical-align: middle;
+}
+
+
+.redirect-link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 24px;
+
+}
+.la{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+.footer-container{
+    width: 200%;
+    height: 700px;
+    background-color: #67a948;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    width: 90%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'lato',sans-serif;
+}
+.footer-in-top{
+    width: 1226.69px;
+    height: 368.72px;
+    color: white;
+}
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    word-spacing: 2px;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.The-Vlogo {
+    margin-bottom: 50px;
+}
+.the-logos{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 30px;
+    gap: 25px;
+    margin: auto;
+    margin-top: -20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.the-right{
+    width: 973px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style: none;
+    line-height:56px;
+    font-size: 21px;
+    margin-top: -61px;
+}
+
+.menu1 {
+    list-style: none;
+    color:white;
+   width: 225px;
+   margin-bottom: 10px;
+}
+
+
+.h{
+    font-size: 20px;
+    line-height: 64px;
+    color: white;
+    font-style: normal;
+    font-family: lato,sans-serif;
+    font-weight: 200;
+}
+
+
+
+li a {
+    text-decoration: none;
+    color:white;
+}
+
+.footer-in-bottom{
+    display: flex;
+    flex-direction: row;
+    background-color:#67a948;
+    gap: 90px;
+}
+.social-media-links {
+    width: 165px;
+    height: 31px;
+    padding-left: 66px;
+    box-sizing: content-box;
+    margin-top: -124px;
+    gap: 15px;
+    display: flex;
+}
+.d-links{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    margin-top: -124px;
+    font-size: 15.24px;
+    font-weight: 600;
+    font-family: lato,sans-serif;
+    word-spacing: 2px;
+    margin-left: 53px;
+    
+}
+.d-links a {
+    font-size: 20px;
+}
+.footer-container .footer hr {
+    width: 100%;
+    opacity: .25;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 1px
+}
+.why1 {
+    font-size: 21.04px !important;
+ 
+}
+.why1:last-child {
+       font-size: 19.04px;
+}
+
+.hh li {
+  margin-top: 10px;
+  color: white;
+ text-decoration: none;
+ font-size: 19px;
+ font-family: lato, sans-serif;
+ margin-top: -20px;
+ font-weight: 200;
+ line-height: 40px;
+}
+.why2 {
+  margin-top: 27px;
+  font-weight: 200;
+}
+
+
+.img-new {
+    width: 30px;
+    height: 31px;
+    padding-left: 50px;
+}
+.footer-link{
+ color: white;
+ text-decoration: none;
+ font-size: 20px;
+ font-family: lato, sans-serif;
+ margin-top: -20px;
+ font-weight: 200;
+}
+.footer-link:hover {
+    color: #3e6f26;
+}
+.add {
+  color: white;
+ text-decoration: none;
+ font-size: 20px;
+ font-family: lato, sans-serif;
+ margin-top: -20px;
+ font-weight: 600;
+}
+ .copyright-text{
+    margin-top: -124px;
+    font-size: 19.2px;
+    color: #f7fff3;
+    font-style: normal;
+    font-family: lato,sans-serif;
+    font-weight: 100;
+    margin-left: 33px;
+   } 
+    
+   .hr {
+    margin-top: 90px;
+    width: 200px;
+    border-radius: 1px solid #f7fff3;
+    height: 0px;
+    
+   }
+   .why3 a {
+    color: white;
+ text-decoration: none;
+ font-size: 20px;
+ font-family: lato, sans-serif;
+ margin-top: -20px;
+ font-weight: 200;
+}
+
+ .why4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 27px;
+ }
+ .h {
+ color: white;
+ text-decoration: none;
+ font-size: 20px;
+ font-family: lato, sans-serif;
+ margin-top: -20px;
+ font-weight: 300;
+ line-height: 40px;
+
+}
+   
+
+  
+
+
+    </style>
+</head>
+
+<body>
+  <!-- Great C -->
+  <div class="Division0">
+    <div class="Division1">
+        <div class="Header">
+            <span class="HeaderR">
+                <img src="Images/Header img.png" alt="" class="Headerimg">
+            </span>
+            <ul class="Headerlist">
+                <span class="Homebar">
+                    <li>Home</li>
+                </span>
+                <span class="Dropdowntoggle">
+                    <li class="Toggle">Products
+                      <span>
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" class="Reversecaret"style="display: block; fill: none; height: 17px; width: 16px; stroke: currentcolor; stroke-width: 4.33333; overflow: visible;"><g fill="none">
+                          <path
+                            d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932">
+                          </path>
+                            </g>
+                        </svg>
+                      </span>
+                     <div class="Dropdown">
+                      <div class="NavdropdownL">
+                        <div class="Dropdownrow1">
+                          <div class="Dropdownitem">
+                            <img src="Images/Dropdown img1.svg" alt="">
+                            <span class="Dropdowntext">
+                              <h3>Cards</h3>
+                              <p>Ranges from Dreamers’ card (soon), Globalgeng Naira and Dollar Card, Founders card</p>
+                            </span>
+                          </div>
+                          <div  class="Dropdownitem">
+                            <img src="Images/Dropdown img2.svg" width="50px" height="50px" class="imgresize" alt="">
+                            <span class="Dropdowntext">
+                                <h3>Pathways (Japa)</h3>
+                                <p>See all immigration pathways available on Vesti.</p>
+                              </span>
+                          </div>
+                        </div>
+                        <div class="Dropdownrow2">
+                          <div class="Dropdownitem">
+                            <img src="Images/Dropdown img3.svg" style="margin-top: 15px;">
+                            <span class="Dropdowntext">
+                              <h3>Credit Store</h3>
+                              <p>Start importing your foreign credit history.</p>
+                            </span>
+                          </div>
+                          <div class="Dropdownitem">
+                            <img src="Images/Dropdown img4.svg" style="margin-top: 15px;" alt="">
+                            <span class="Dropdowntext">
+                              <h3>Wallets</h3>
+                              <p>See all your balances available on Vesti.</p>
+                            </span>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <div class="NavdropdownR">
+                        <div class="Dropdownrow3">
+                          <div class="Dropdownitem">
+                            <img src="Images/Dropdown img5.svg" style="margin-top: 15px;" alt="">
+                            <span class="Dropdowntext2">
+                              <span class="Dropdownheader">
+                                <h3>Loans</h3> 
+                                <img src="Images/Dropdown img7.svg" width="50px" height="22px" class="Dropdownicon"> 
+                              </span>
+                              <p>Access various migration <br> loans on Vesti.</p>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="Dropdownrow4">
+                            <div class="Dropdownitem">
+                              <img src="Images/Dropdown img6.svg" style="margin-top: 30px;">
+                              <span class="Dropdowntext2">
+                                <span class="Dropdownheader">
+                                  <h3>MLab</h3> 
+                                  <img src="Images/Dropdown img7.svg" width="50px" height="22px" class="Dropdownicon" alt=""> 
+                                </span>
+                                <p>Coming Soon...</p>
+                              </span>
+                            </div>
+                          </div>
+                      </div>
+                     </div>
+                    </li>
+                </span>
+                <span class="Navleft">
+                <li class="Navleftitem1">Team </li><span class="Navitemsrule1"></span>
+                <li class="Navleftitem2">Migration Fries </li><span class="Navitemsrule2"></span>
+                <li class="Navleftitem3">Sign In </li><span class="Navitemsrule3"></span>
+                </span>
+            </ul>
+            <span class="HeaderL">
+              <a href="C F A/Loginvesti.html"><button>Create Free Account</button></a>
+              <!-- <div>
+                <button class="flag-select__btn" id="" type="button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="" style="font-size: 16px;">
+                  <span class="Countrydropdown">
+                    <class="NGAimg" src="Images/NGA Flag.svg" alt="NG" width="30px" height="30px">
+                  </span>
+                  
+                </button>
+                <ul tabindex="-1" role="listbox"> 
+                  <li role="option" tabindex="0">
+                    <span>
+                      <img src="Images/NGA Flag.svg">
+                      <span>NG</span>
+                    </span>
+                  </li>
+                  <li role="option" tabindex="0"></li>
+                  <li role="option" tabindex="0"></li>
+                </ul>
+              </div> -->
+            </span>
+        </div>
+       
+        <div class="Heropagecontent">
+          <div class="Heropagetext">
+            <h1 class="Heroheading"><b>Financial services for immigrants</b></h1>
+            <p class="Herotext">Millions of people - moving to new countries each year - use Vesti for accessing financial services like bank accounts, debit and credit cards.</p>
+          </div>
+          <div class="Heroimg">
+            <img src="Images/Heroimg.svg">
+          </div>
+
+        </div>
+
+        <div class="Mediabar">
+          <div class="Mediaitem1">
+            <img src="Images/playstore img.svg" class="Mediaimg">
+            <span class="Mediatext">
+              <h3>GET IT ON</h3>
+              <p>Google Play</p>
+            </span>
+          </div>
+          <div class="Mediaitem2">
+            <img src="Images/apple img.svg" style="width: 35px; height: 35px;" class="Mediaimg">
+            <span class="Mediatext">
+              <h3>GET IT ON</h3>
+              <p>Apple Store</p>
+            </span>
+          </div>
+          <divx class="Helpbar"  id="helpi">
+            <svg width="20" height="20" viewBox="0 0 20 20" style="color: #2F3D14; fill:#2F3D14;" aria-hidden="true"><g id="Layer_4"><path d="M11,12.3V13c0,0-1.8,0-2,0v-0.6c0-0.6,0.1-1.4,0.8-2.1c0.7-0.7,1.6-1.2,1.6-2.1c0-0.9-0.7-1.4-1.4-1.4 c-1.3,0-1.4,1.4-1.5,1.7H6.6C6.6,7.1,7.2,5,10,5c2.4,0,3.4,1.6,3.4,3C13.4,10.4,11,10.8,11,12.3z"></path><circle cx="10" cy="15" r="1"></circle><path d="M10,2c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S5.6,2,10,2 M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0 L10,0z"></path></g></svg>
+            <b>Help</b>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="Division2">
+      <div class="Intro">
+       <span class="Introtext">
+         <h3>What Can You Do With Vesti</h3>
+         <p>Vesti gives humans the power to move overseas to 100+ countries. We are the future of legal Immigration and global migration. Vesti uses deep technology like AI to help thousands of Immigrants to find new homes.</p>
+        </span>
+      </div>
+      <div class="Intro-img-gallery">
+        <div class="Intro-img-row">
+          <div class="Intro-img-item">
+            <h3>Financial Service for all intending Immigrants and the diaspora.</h3>
+            <p>Want To Migrate To Live, For School or For Work ? you can Try Vesti Now, 
+              Join more than 70,000 Users finding new homes abroad,raising the money they need to move and making difficult international payments and accessing credit facilities.<br>
+              With Vesti Founders' can register their businesses abroad</p>
+            <a>
+              Get Vesti Now
+            </a>
+            <img src="Images/Intro img1.png" class="Imgoverlay">
+          </div>
+          <div class="Intro-img-item">
+            <h3>Financial Service for all intending Immigrants and the diaspora.</h3>
+            <p>Send money to a service provider once you Know their username.
+               Recieve money for a service by sending your unique Vesti name, No complex setup required.
+               Use your money immediately to pay for fees like WES and US-SEVIS.<br>
+              Hundreds of trusted Immigration service providers, all in one place</p>
+            <a>Get Vesti Now</a>
+            <img src="Images/Intro img2.png" class="Imgoverlay">
+          </div>
+        </div>
+
+        <div class="Heading2">
+          <h2> A future for everyone</h2>
+        </div>
+
+        <div class="Intro-img-row">
+          <div class="Intro-img-item">
+            <h3>Opportunities for Founders at <br>Vesti</h3>
+            <p>
+              Vesti allows business owners the opportunity to own a bank account in the U.S and 
+              a Founders card which allow them to make and recieve payments in USD.
+              With Vesti business owners have a great pool of opportunities to explore.</p>
+            <a class="a2">Get Vesti Now</a>
+            <img src="Images/Intro img3.png" class="Imgoverlay">
+          </div>
+          <div class="Intro-img-item">
+            <h3>Access and Import Credit Score with Vesti</h3>
+            <p>Join more than 70,000 Users to get access to and import your credit
+               score ratings with Vesti from your own country to the U.S,
+               which can help facilitate acquisition of loans and credit cards.</p>
+            <a class="a3">Get Vesti Now</a>
+            <img src="Images/Intro img4.png" class="Imgoverlay" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+<!-- Gee Gold  -->
+
+  <div class="dady">
+    <div class="one">
+        <h2>Get Started In a Few Minutes</h2>
+        <h5 class="body">we protect your data with militry-grade security and fraud<br class="three"> security.your money is insured through our partner banks<br class="four"> with the fcid and the ncid</h5>
+      </div>
+        <div class="six">
+            <div class="five">
+                <h2>Set Up In Minutes</h2>
+                <h5 class="body">from your bed or office dest, you can get a <br> vesti account without lifting a finger,decide <br> which country to migrate to, pay for your <br> immigration fees and make other financial <br> transaction</h5>
+               </div>
+              <img src="vesti/seven.svg" alt="">
+            </div>
+            <div class="eight">
+                <img src="vesti/eight.svg" alt="">
+                <div class="nine">
+                    <h2 class="head">Trust Is Everything</h2>
+                    <h5 class="body">At vesti, our people comes first.we believe <br> protecting you,your data and money is our <br> number one priority. <br> As a resultwe comply with you the highest <br> standerd of our security the market offers and <br> leads with intergrity </h5>
+                </div>
+            </div>
+        </div>
+            <div class="ten">
+                <h2 class="eleven">We Completeted 1000+ International <br> Payments to</h2>
+            </div>
+            <div class="twelve">
+                <img src="vesti/wes.png" alt="">
+                <img src="vesti/ceu.png" alt="">
+                <img src="vesti/uh.png" alt="">
+                <img src="vesti/uoh.png" alt="">
+                <img src="vesti/usa.png" alt="">
+            </div>
+
+<!-- franlyns -->
+<section class="International">
+  <div class="info">
+      <img src="phone2.png" alt="">
+      <div class="int">
+          <h1>International Fee<br> Payment Simplified</h1>
+          <span class="pp">Think lifting a feather is effortless? Try payment with Vesti</span>
+      
+      <div class="grid">
+          <div class="hassle">
+              <img src="https://app.wevesti.com/static/media/hassle.88ad7e9d.svg" alt=""> 
+          <span>
+              <h2 class="title">Without Hassle</h2>
+              <p>Go pass local limitations and make<br> international payments like WES, IHS,<br> SEVIS and UK student Visa fees. </p>
+          </div>
+          <div class="fast">
+              <img src="https://app.wevesti.com/static/media/fast-time.5934e76d.svg" alt=""> 
+          <span>
+              <h2 class="title">Seamless International Partnerships</h2>
+              <p>We have strengthened our<br> global infrastructure with<br> partnerships that work.</p>
+          </div>
+          <div class="seam"><img src="https://app.wevesti.com/static/media/rocket.2cfd86a7.svg" alt=""> 
+              <span>
+                  <h2 class="title">Fast</h2>
+                  <p>We settle payments in time for you to<br> make University admissions, or real<br> time investment..</p></div>
+          <div class="secure"><img src="https://app.wevesti.com/static/media/secure.1abea2ed.svg" alt=""> 
+              <span>
+                  <h2 class="title">Secure</h2>
+                  <p>We use state-of-the-art data<br> encryption when handling<br> financial details.</p>
+              </span></div>
+      </div>
+  </div>
+</section>
+<section class="section2">
+  <div class="cont">
+      <marquee onmouseover="this.stop()" onMouseOut="this.start()" directiou="down" behaviour=scroll scrollAmount="6"  scrolldelay="2">
+      <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="human">
+              <img src="profile1.png" alt="">
+              <h3>Tutti Uwanikone</h3>
+          </div>
+          <span class="timer">France • Wednesday, 29 of August 2021 by 21:33pm</span>
+              <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.Mollitia laboriosam unde, corrupti incidunt totam vel illo at libero odio asperiores facilis quas dolore ipsa? Quaerat alias numquam doloremque accusantium fugit? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id imperdiet mauris. Vivamus et sapien nunc. </p>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-content">
+              <div class="human">
+                  <img src="profile1.png" alt="">
+              <h3>Abdur-Rahman Ridwan</h3>
+              </div>
+              
+  
+                 <span class="timer">United Kingdom • Wednesday, 29 of August 2021 by 21:33pm</span> 
+                  <p class="card-info">
+                  "Vesti was instrumental in my educational Immigration journey to the UK". It is a reliable platform that empowers individuals to realize different Immigration ambitions through its tailored solutions practically. More than a platform, it is a dependable community that drives you to your Immigration dreams from point A - Z with you still in charge.</p>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-content">
+              <div class="human">
+                  <img src="profile1.png" alt="">
+              <h3>Damola Oni</h3>
+          </div>
+              
+  
+                 <span class="timer"> United States • Wednesday, 29 of August 2021 by 21:33pm</span>
+                  <p class="card-info">
+                  Vesti was a step ahead of me, I attended a 2 hour webinar organized by Vesti on Saturday, 24th of October 2020 and it changed my orientation forever. Today, I am in the United States of America, and none of it would be
+                  possible without “Japa webinar 1.0” and the great work being
+                  After the event of 20-10-20, I knew the country wasn’t for me anymore. Thankfully, the team at done by the team at Vesti.</p>
+            </div>
+          </div>
+      </div>
+      </marquee>
+
+
+      <div class="users">
+          <h1>What Are Our Users Saying</h1>
+          <h2>Read testimonials from some of our<br> users getting access to financial and<br> global mobility services regardless of<br> country of residence.</h2>
+          <button>join for free</button>
+      </div>
+  
+  
+  
+<!-- hope -->
+
+</section>
+<diV class="download-vesti">
+  <div class="inner">
+    <div class="in">
+    <h1>Download the Vesti<br>
+      App and begin your<br>
+      <span>Immigration journey</span></h1>
+      <div class="links">
+        <div class="stores">
+          <img src="https://app.wevesti.com/static/media/playstore.0888a6ac.svg" alt="">
+          <p>Get it on<br>
+         <span> Google play</span</p>
+        </div>
+        <div class="stores">
+          <img src="https://app.wevesti.com/static/media/apple.a05c2007.svg" alt="">
+          <p>Get it on<br>
+          <span>Apple store</span></p>
+        </div>
+      </div>
+      <div class="img-right">
+  <img src="https://app.wevesti.com/static/media/free.c6a7eca2.png" alt="">
+      </div>
+  </div>
+
+
+</diV>
+</div>
+<section class="sect">
+  <span class="so">
+      <h1>Be Rest Assured</h1>
+      <p>Learn how we help people and talent migrate to the country of their choice.</p>
+  </span>
+  <div class="big">
+      <div>
+          <img src="vaultnew.184d27c0.svg" alt="">
+          <h1>Bank level security</h1>
+          <p> We use state-of-the-art data encryption when handling financial information and (2FA) protection. We're backed by top financial market operators and we not only meet  traditional banking security standards, we exceed them. </p>
+      </div>
+      <div>
+          <img src="lock.a038d106.svg" alt="">
+          <h>High Level Protection</h>
+          <p>Accounts are held by our banking partners, duly registered by the apex regulatory bodies in the countries we operate.</p>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ella -->
+
+<section class="Newsletter-container">
+  <!-- <img class="image1" src="circlesup.8a4a1bd7.svg " alt>-->
+  <img class="image2"src="circlesdown.6ea10ee3.svg" alt=""> 
+  <div class="Newsletter-inner">
+  <div class="newsletter-top">
+      <p class="a">Join the Vesti community</p>
+      <p class="b"> Enter your mail to stay in-touch with the latest news and releases from the Vesti team</p>
+  <div class="newsletter-input">
+      <button type="button" class="newsletter-button"><span>Subscribe</span></button>
+  </div>
+      <a class="redirect-link" rel="noopener noreferrer" target="_blank" href="https://open.substack.com/pub/vesti/p/whats-new-with-vesti?r=1vtuzd&amp;utm_campaign=post&amp;utm_medium=web">Read what's new &nbsp;<img src="arrowslant.cd756beb.svg" alt=""></a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+</section>
+<div class="la">
+  <p> We've Been Featured In</p>
+  <div class="the-logos">
+  <a rel="noreferrer noopener" target="_blank" href="https://www.bloomberg.com/press-releases/2022-08-30/nova-credit-and-vesti-partner-to-alleviate-financial-barriers-for-u-s-bound-nigerians"><img class=" bloomberg " src="/static/media/Bloomberg.c9bf8dca.svg" alt=""><img class="d" src="Bloomberg.c9bf8dca.svg" alt=""></a>
+  <a rel="noopener noreferrer" target="_blank" href="https://www.techcityng.com/migrants-banking-app-vesti-raises-500k-in-pre-seed-funding/"><img class="e" src="techcity.ef312b50.svg" alt=""></a>
+  <a rel="noopener noreferrer" target="_blank" href="https://disrupt-africa.com/2022/04/14/3-nigerian-startups-selected-for-techstars-nyc-accelerator-programme/"><img class="f" src="disrrupt.a42656d2.svg" alt=""></a>
+  <a rel="noopener noreferrer" target="_blank" href="https://www.techstars.com/newsroom/techstars-nyc-class-of-spring-2022"><img class="g" src="techstars.8630a803.svg" alt=""></a>
+  </div>
+</div>
+<footer class="footer-container">
+  <div class="footer">
+       <div class="footer-in-top">
+           <div class="footer-top">
+              <img class="The-Vlogo"src="download.png" alt="White-logo">
+              <div class="the-right">
+                  <ol class="menu1">
+                      <li class="add">PRODUCTS</li>
+                      <span class="why1">
+                      <li><a class="footer-link" href="/japa">Japa</a></li>
+                      <li><a class="footer-link" href="/vesticard">GlobalGeng card</a></li>
+                      <li><a class="footer-link" href="/vesticard">VirtualDollar card</a></li>
+                      <li><a class="footer-link" href="/#">Dreamers' card <img src="/static/media/soon.de959708.svg" alt=""></a></li>
+                      <img src="https://app.wevesti.com/static/media/soon.de959708.svg" alt="">                            
+                      <li>MLab (Migration Lab)</li>
+
+                      <img src="https://app.wevesti.com/static/media/soon.de959708.svg"alt="">
+                  </span>
+                  </ol>
+                  <ol class="menu1">
+                      <li class="add">CONTACT</li>
+                      <span class="why2">
+                      <li class="hh">help@wevesti.com</li>
+                    </ol>
+                     </span>
+                  <ol class="menu1">
+                      <li class="add">COMPANY</li>
+                      <span class="why3">
+                      <li><a rel="noopener noreferrer" target="_blank" href="https://open.substack.com/pub/vesti/p/whats-new-with-vesti?r=1vtuzd&amp;utm_campaign=post&amp;utm_medium=web">Vesti Blog</a></li>
+                      </span>
+                  </ol>
+                  <ol class="menu1">
+                      <li class="add">ADDRESS</li>
+                      <span class="why4">
+                      <li class="h">NIGERIA(LAGOS)</li>
+                      <li class="h">30 Furo Ezimora street Lekki Phase 1</li>
+                      <li class="h">DALLAS TEXAS, USA</li>
+                      <li class="h">1301, S Bowen rd, Ste<br> 450, Arlington, Tx<br> 76013.</li>
+                  </span>
+                  </ol>
+              </div>
+          </div>
+       </div>
+       <hr class="hr"> 
+</footer>
+
+<span class="footer-in-bottom">
+  <div class="social-media-links">
+      <div><a rel="noopener noreferrer" target="_blank" href="https://web.facebook.com/vesticash"><img class=".img-new" src="facebook-logo.f2a3efff.svg" alt="fb"></a></div>
+      <div><a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/vestiofficial/"><img class=".img-new" src="instagram-logo.796fb8f6.svg" alt="insta"></a></div>
+      <div><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/company/vestiofficial/mycompany/"><img class=".img-new" src="linkedin-logo.edd55e56.svg" alt="linkedin"></a></div>
+      <div><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/vestiofficial"><img class=".img-new" src="twitter-logo.9d66fc82.svg" alt="twitter"></a></div></div>
+   </div>
+ <div class="d-links">
+  <a class="footer-link" href="/disclosure">TERMS OF SERVICE &nbsp;•</a>
+  <a class="footer-link" href="/privacy">PRIVACY</a>
+  <a class="footer-link" href="/aml">• &nbsp; AML</a>
+  <a class="footer-link" href="/fees">• &nbsp; FEES</a>
+  <a class="footer-link" href="/faq">• &nbsp; FAQS</a>
+</div>   
+<p class="copyright-text">©2022 VESTI. All rights reserved</p>
+</span>
+<div id="help-don" class="don">
+  <div class="leave">
+      <p>Leave us a message</p>
+      <div  class="help">
+          <span onclick="close1()">
+          <svg width="16" height="16" viewBox="0 0 16 16" data-testid="Icon--dash" data-garden-id="buttons.icon" data-garden-version="8.13.0" theme="[object Object]"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M3 8h10"></path></svg>
+          </span>
+      </div>
+  </div>
+  <p class="your">Your name (optional)</p>
+  <input type="text,number" class="type">
+  <p class="your">Email address</p>
+  <input type="text,number" class="type">
+  <p class="your">How can we help you?</p>
+  <input type="text,number" class="we">
+  <p class="your">Attachment</p>
+  <div class="none">
+      <button><svg width="16" height="16" viewBox="0 0 16 16" class="styles__Icon-sc-o76a7f-3 jdAgtb"><path fill="none" stroke="currentColor" stroke-linecap="round" d="M9.5 4v7.7c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V3C6.5 1.6 7.6.5 9 .5s2.5 1.1 2.5 2.5v9c0 1.9-1.6 3.5-3.5 3.5S4.5 13.9 4.5 12V4"></path></svg>Add up to 5 files</button>
+  </div>
+  <div class="Zen">
+      <p>Zendex</p>
+      <button><a href="">Send</a></button>
+  </div>
+
+</div>  
+
+</html>
+</body>
+
+
+
+
+
+
+<script>
+   
+  let marquee = document.querySelector('marquee');
+
+function reverseMarquee() {
+marquee.setAttribute('direction', 'up');
+}
+
+setTimeout(reverseMarquee, 500);
+   
+
+let help = document.querySelector('#helpi')
+let don = document.querySelector('.don')
+help.addEventListener('click',()=>{
+  if (don.style.display === 'none') {
+    don.style.display =  'inline'
+    help.style.display = 'none'
+  } else {
+    don.style.display =  'none'
+    help.style.display = ''
+  }
+  function close(){
+    don.style.display =  'none'
+    help.style.display = ''
+  }
+})
+
+function close1() {
+  document.querySelector('.don').style.display = 'none'; 
+  document.querySelector('#helpi').style.display = 'inline';
+}
+
+    </script>
+
+</body>
+
+</html>
